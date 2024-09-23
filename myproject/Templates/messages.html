@@ -1,0 +1,18 @@
+
+{% if messages %}
+    
+    {% for msg in messages %}
+        
+        {% if msg.tags == "success" %}
+        <p>{{msg}}</p>
+        {% elif msg.tags == "error" %}
+        <p>{{msg}}</p>
+        {% elif msg.tags == "warning" %}    
+        <p>{{msg}}</p>
+        {% endif %}
+            
+        
+    {% endfor %}
+        
+{% endif %}
+    
